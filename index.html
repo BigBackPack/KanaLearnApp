@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./img/favIcon.png" type="image/png">
+
+    <title>KANA</title>
+</head>
+
+
+<body onload="pickKana(hiragana)">
+    <div class="kanaSeclectionContainer">
+        <a class="kanaTypeSelector" href="index.html">HI<br>RA</a>
+        <a class="kanaTypeSelector passive" href="katakana.html">KA<br>TA</a>
+    </div>
+
+    <!-- header -->
+    <h1>WHAT HIRAGANA <br> IS THIS?</h1>
+
+    <!-- kana container -->
+    <div class="kanaContainer" id="kanaContainer"></div>
+
+    <!-- solution container -->
+    <div class="solutionContainer">
+        <p class="solution" id="solution"></p>
+        <p id="eval"></p>
+    </div>
+
+    <input type="text" id="userInput" placeholder="ur guess?" autocomplete="off">
+    <a href="#" onclick="showSolution()">CHECK</a>
+    <a href="index.html">NEXT</a>
+</body>
+</html>

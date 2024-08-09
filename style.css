@@ -1,0 +1,116 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body{
+    background: rgb(255,196,0);
+    background: linear-gradient(117deg, rgba(255,196,0,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanaSeclectionContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.kanaSeclectionContainer a{
+    padding: 5px 10px;
+    background-color: white;
+    color: rgb(255,196,0);
+    border-radius: 6px;
+    margin: 0 10px;
+    cursor: pointer;
+ }
+
+.kanaContainer{
+    border: solid white 1px;
+    border-radius: 6px;
+    padding: 50px;
+    font-size: 3rem;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    background-color: white;
+    color: rgb(255,196,0);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    margin-top: 24px;
+    transition: padding 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover{
+    padding: 0 4px;
+}
+
+.solutionContainer{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution{
+    display: none;
+    background-color: white;
+    color: rgb(255,196,0);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+input{
+    border-style: none;
+    border-radius: 6px;
+    padding-left: 14px;
+    width: 134px;
+    height: 40px;
+    margin-top: 24px;
+    opacity: 0.6;
+
+}
+
+input::placeholder {
+    opacity: 0.5;
+  }
+
+  input:focus {
+    opacity: 1;
+    outline: none;
+  }
+
+.kanaTypeSelector{
+    background-color: white;
+    color: rgb(255,196,0);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    margin-top: 24px;
+    transition: padding 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.passive{
+    opacity: 0.5;;
+  }
+
+.passive:hover{
+    opacity: 1;;
+  }
